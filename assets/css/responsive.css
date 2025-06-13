@@ -1,4 +1,7 @@
 @media screen and (max-width:1199px) {
+    html{
+        font-size: 15px;
+    }
     .navigation-bar {
         display: flex;
         justify-content: space-between;
@@ -53,5 +56,40 @@
     .brand-container-desktop, .header_icons ,.menu_right  {
         display: none;
     }
+    .brand-link { 
+        width: 10.75rem;
+        background-position: center;
+    }
 
+}
+
+
+
+@media screen and (max-width:1024px){
+
+}
+
+
+@media screen and (max-width:991px){
+    
+}
+
+@media screen and (max-width:767px){
+    html{
+        font-size: 14px;
+    }
+    .brand-link {
+        width: 8.75rem;
+    } 
+    
+}
+
+@media screen and (max-width:575px){
+    .brand-link {
+        width: 7.75rem;
+    } 
+}
+
+@media screen and (max-width:480px){
+    
 }

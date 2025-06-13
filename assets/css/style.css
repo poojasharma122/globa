@@ -339,6 +339,9 @@ span.theme_bold {
 .brand-container_mobile {
     display: none;
 }
+.brand-container_mobile a{
+    background-image: url(../images/logo_mobile.svg);
+}
 
 .navigation-bar {
     display: grid;
@@ -517,7 +520,7 @@ span.theme_bold {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .header_select select {

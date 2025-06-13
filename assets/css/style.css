@@ -243,7 +243,7 @@ span.theme_bold {
 }
 
 .text_theme {
-    color: #e66a31;
+    color: #8b572a;
 }
 
 .aoshide {
@@ -643,6 +643,63 @@ hr{
 .home_why_us_txt {
     padding: 0 1rem 1rem 1rem;
 }
-
+.underline{
+    position: relative;
+}
+.underline::after {
+    content: '';
+    position: absolute;
+    background: #4c4c4c;
+    height: 2px;
+    width: 100px;
+    bottom: -10px;
+    left: 0;
+}
+.underline_theme{
+    position: relative;
+}
+.underline_theme::after {
+    content: '';
+    position: absolute;
+    background: #8b572a;
+    height: 2px;
+    width: 70px;
+    bottom: -10px;
+    left: 0;
+}
 
 /* After Banner CSS End */
+
+
+/* Home Location Cards CSS Start */
+.home_explore_card_txt h5 svg {
+    height: 15px;
+    width: 15px;
+    margin-top: -3px;
+    fill: #212529;
+    margin-right: 0.3125rem;
+}
+.home_explore_card_txt p svg {
+    height: 15px;
+    width: 20px;
+    margin-top: -3px;
+    fill: #212529;
+    margin-right: 0.3125rem;
+}
+.home_explore_card_img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+.home_explore_card {
+    background-color: #ffff;
+    height: 100%;
+    transition: 0.2s all ease-in-out;
+}
+.home_explore_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.home_explore_card_txt {
+    padding: 0 1rem  1.25rem 1rem;
+}
+/* Home Location Cards CSS End*/

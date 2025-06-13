@@ -490,6 +490,7 @@ span.theme_bold {
     opacity: 0;
     visibility: hidden;
     border-radius: 20px;
+    z-index: 99;
 }
 
 .navigation-bar li:hover ul.submenu {
@@ -637,7 +638,7 @@ hr{
     transition: 0.2s all ease-in-out;
 }
 .home_why_us_card:hover {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .home_why_us_txt {
     padding: 0 1rem 1rem 1rem;

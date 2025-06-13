@@ -45,6 +45,7 @@ p {
     margin: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
+    color: #4c4c4c;
 }
 
 ul {
@@ -610,6 +611,13 @@ span.theme_bold {
     opacity: 1;
     transform: scale(1.1);
 }
-
-
 /* Home Category Slider CSS End */
+
+/* After Banner CSS Start */
+.after_banner_wrap p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+/* After Banner CSS End */

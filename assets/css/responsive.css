@@ -81,6 +81,11 @@
     .brand-link {
         width: 8.75rem;
     } 
+    .header_select {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 100%;
+    }
     
 }
 

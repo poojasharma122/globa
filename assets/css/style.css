@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* Global CSS Start */
+html {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+    word-break: break-word;
+    background-color: #f5f5f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    line-height: 1;
+}
+
+p {
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    line-height: 1.2;
+    margin-bottom: 3px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+button,
+textarea,
+input {
+    font-family: "Raleway", sans-serif;
+}
+
+input {
+    font-family: "Raleway", sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 0.9375rem;
+}
+
+
+.py-7 {
+    padding: 4.375rem 0;
+}
+
+.pt-7 {
+    padding-top: 4.375rem;
+}
+
+.pb-7 {
+    padding-bottom: 4.375rem;
+}
+
+.py-8 {
+    padding: 5rem 0;
+}
+
+.pt-8 {
+    padding-top: 5rem;
+}
+
+.pb-8 {
+    padding-bottom: 5rem;
+}
+
+
+.py-10 {
+    padding: 6.25rem 0;
+}
+
+.pb-10 {
+    padding-bottom: 6.25rem;
+}
+
+.pt-10 {
+    padding-top: 6.25rem;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.m-0-auto {
+    margin: 0 auto
+}
+
+.bg_center_cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_center_contain {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.bg-0-0 {
+    background-position: 0% 0%;
+}
+
+/* Global CSS End */
+
+
+
+
+/* Website Scrollbar CSS  */
+::-webkit-scrollbar {
+    width: 0.9375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8b572a;
+    border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8b572a;
+}
+
+/* Website Scrollbar CSS  */
+
+/* Section Heading CSS Start */
+.section_heading {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+span.theme {
+    color: #8b572a;
+}
+
+span.theme_bold {
+    color: #8b572a;
+    font-weight: 600;
+}
+
+.bg_light {
+    background-color: #f5f5f7;
+}
+
+.bg_dark {
+    background-color: #111111;
+}
+
+.text_white {
+    color: #fff;
+}
+
+.text_theme {
+    color: #e66a31;
+}
+
+.aoshide {
+    overflow: hidden;
+}
+
+/* Section Heading CSS End */
+
+/* Button CSS Start */
+.butn {
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+    display: inline-flex;
+    border: none;
+    text-align: center;
+    background-color: #8b572a;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 0.9375rem 1.875rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.butn::after,
+.butn::before {
+    content: "";
+    display: block;
+    width: 3.125rem;
+    height: 3.125rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #000;
+    transition: 1s ease;
+}
+
+.butn::before {
+    top: -2em;
+    left: -2em;
+}
+
+.butn::after {
+    left: calc(100% + 2em);
+    top: calc(100% + 2em);
+}
+
+.butn:hover {
+    color: #fff;
+    box-shadow: none;
+}
+
+.butn:hover::after,
+.butn:hover::before {
+    height: 25.625rem;
+    width: 25.625rem;
+}
+
+/* Button CSS End*/
+/* Header CSS Start */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    padding: 0 40px;
+    padding: 0.9375rem 0px;
+    background-color: #f5f5f7;
+}
+
+.sticky-header.fixed_header {
+    background-color: #222222;
+
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.9375rem 0;
+}
+
+.brand-container_mobile {
+    display: none;
+}
+
+.navigation-bar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.brand-container {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+.brand-link {
+    display: inline-block;
+    background-position: unset;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 300px;
+    background-image: url(../images/logo.svg);
+}
+
+.menu-toggle-btn {
+    display: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: right;
+    cursor: pointer;
+    margin: auto 0;
+    z-index: 60;
+    background-image: url("../images/menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation-menu ul,
+.menu_right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-menu ul li a,
+.menu_right ul li a {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    position: relative;
+    color: #8b572a;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.navigation-menu ul li a::after,
+.menu_right ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #8b572a;
+    transform-origin: center;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-menu ul li a.active::after,
+.menu_right ul li a.active::after {
+    transform: scaleX(0.9);
+    background: #8b572a;
+    transform-origin: center;
+}
+
+.navigation-menu ul li a:hover::after,
+.menu_right ul li a:hover::after {
+    transform: scaleX(0.9);
+}
+
+.menu-close-btn {
+    display: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/close.png);
+}
+
+.navigation-menu ul li a.desktop_hidden {
+    display: none;
+}
+
+.sticky-header .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-header .social-links a {
+    color: #fff;
+    margin: 0 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all ease-in-out;
+    padding: 0.5625rem;
+}
+
+.sticky-header .social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.sticky-header .social-links a svg {
+    fill: #8b572a;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navigation-bar li a svg {
+    transition: all 0.2s linear;
+    fill: #8b572a;
+}
+
+.navigation-bar li {
+    position: relative;
+}
+
+.navigation-bar li ul.submenu {
+    display: block;
+    position: absolute;
+    width: max-content;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #2222220e;
+    top: calc(100% + 60px);
+    left: 0;
+    transition: all 0.2s linear;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 20px;
+}
+
+.navigation-bar li:hover ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+.header_with_select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header_select select {
+    border: none;
+    outline: none;
+    padding: 0.9375rem 1.875rem;
+    min-width: 300px;
+    font-size: 1.1rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #818181;
+    width: auto;
+}
+
+.header_select {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.brand-container-desktop p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #8b572a;
+    font-family: "Playfair Display", serif;
+}
+
+/* Header CSS End */
+
+
+/* Home Category Slider CSS Start */
+.hotel_cat_cards.py-5 {
+    height: 700px;
+    overflow: hidden;
+}
+
+.banner_slides {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+
+.slide_content {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 35px;
+    opacity: 1;
+}
+
+.hotel_cat_cards  button.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.hotel_cat_cards button.slick-next {
+    right: 0;
+    z-index: 1;
+}
+
+.hotel_cat_cards .slick-arrow {
+    width: auto;
+    height: auto;
+}
+
+.slick-prev svg,
+.slick-next svg {
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.slick-prev:hover svg,
+.slick-next:hover svg {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* Home Category Slider CSS End */

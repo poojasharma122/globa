@@ -622,6 +622,7 @@ span.theme_bold {
 .after_banner_wrap p {
     font-size: 1.1rem;
     font-weight: 500;
+    line-height: 1.4;
 }
 .after_banner_wrap h4 {
     color: #191919;
@@ -974,3 +975,20 @@ hr{
     font-size: 1.2rem;
 }
 /* footer end  */
+
+/* Inner Pages CSS Start */
+.inner_pages_banner.bg_center_cover {
+    height: 100%;
+    width: 100%;
+}
+
+
+.hotel_review_cards_sec .home_explore_card_txt h4 {
+    line-height: 1.3;
+    font-size: 1.5rem;
+}
+.how_we_select_cards_content ul li {
+    margin-left: 1.25rem;
+    list-style-type: disc;
+}
+/* Inner Pages CSS End */

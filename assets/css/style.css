@@ -797,10 +797,20 @@ hr{
     width: 100%;
     margin-bottom: 30px;
 }
+.home_plan_img_outer.icon_img {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+}
 .home_plan_img{
     height: 60px;
     width: 60px;
 }
+.home_plan_img.icon_img{
+    height: 100%;
+    width: 100%;
+}
+
 .home_plan_cards {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 1.25rem;
@@ -977,7 +987,7 @@ hr{
 /* footer end  */
 
 /* Inner Pages CSS Start */
-.inner_pages_banner.bg_center_cover {
+.inner_pages_banner {
     height: 100%;
     width: 100%;
 }
@@ -1017,5 +1027,11 @@ hr{
     text-decoration: underline;
     text-underline-offset: 6px;
     font-size: 1.2rem;
+}
+.no_padding{
+    padding: 0;
+}
+.home_plan_cards.no_padding   .how_we_select_cards_content {
+    padding: 0 1.25rem 1.25rem;
 }
 /* Inner Pages CSS End */

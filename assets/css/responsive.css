@@ -61,6 +61,7 @@
         background-position: center;
     }
 
+
 }
 
 
@@ -99,8 +100,15 @@
       .booking-table {
         min-width: 600px;
     }
+    .navigation-bar li ul.submenu {
+        width: 100%;
+        min-width: 450px;
+    }  
+
 }
 
 @media screen and (max-width:480px){
-    
+    .navigation-bar li ul.submenu {
+        min-width: 330px;
+    }   
 }

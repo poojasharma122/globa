@@ -625,14 +625,14 @@ span.theme_bold {
 }
 
 .hotel_cat_cards .slick-arrow {
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
 }
 
 .slick-prev svg,
 .slick-next svg {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     fill: #fff;
     opacity: 0.5;
     transition: all 0.3s ease;
@@ -641,7 +641,7 @@ span.theme_bold {
 .slick-prev:hover svg,
 .slick-next:hover svg {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Home Category Slider CSS End */

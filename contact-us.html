@@ -78,7 +78,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a class="desktop_hidden" class="active" href="./about">Sobre nosotros</a></li>
+                        <li><a class="desktop_hidden" href="./about">Sobre nosotros</a></li>
                         <li><a class="desktop_hidden active" href="contact-us">Contacta con nosotros</a></li>
                     </ul>
                     <div class="menu-close-btn"></div>
@@ -113,7 +113,7 @@
                 </div>
                 <div class="menu_right">
                     <ul>
-                        <li><a class="active" class="mobile_hidden" href="./about-us">Sobre nosotros</a></li>
+                        <li><a class="mobile_hidden" href="./about-us">Sobre nosotros</a></li>
                         <li><a class="mobile_hidden active" href="contact-us">Contacta con nosotros</a>
                         </li>
                     </ul>
@@ -123,49 +123,56 @@
         </div>
     </header>
     <!-- Header Section End -->
-
-    <!--Pages Banner Section Strat -->
-    <div class="inner_pages_banner_outer py-5">
+    <div class="contact_us_sec">
         <div class="container">
-            <div class="inner_pages_banner bg_center_cover"
-                style="background-image: url('assets/images/home_banner_img1.jpg');"> </div>
+            <div class="contact-us-group">
+                <div class="form-section">
+                    <div class="form-image bg_center_contain" style="background-image: url('assets/images/contact_img.svg');"> </div>
+                    <div class="form-container">
+                        <div class="form-wrapper">
+
+                            <form id="contact">
+                                <fieldset>
+                                    <input class="contact-form" placeholder="Su nombre" type="text" tabindex="1"
+                                        required minlength="6" maxlength="100">
+                                </fieldset>
+                                <fieldset>
+                                    <input class="contact-email" placeholder="Tu correo electrónico" type="email"
+                                        tabindex="2" required>
+                                </fieldset>
+                                <fieldset>
+                                    <input class="contact-form" placeholder="Tu número de teléfono" type="text"
+                                        tabindex="3" required minlength="10" maxlength="100">
+                                </fieldset>
+                                <fieldset>
+                                    <input class="contact-form" placeholder="Propósito de su consulta" type="text"
+                                        tabindex="3" required minlength="10" maxlength="100">
+                                </fieldset>
+                                <fieldset>
+                                    <textarea name="message" class="message" placeholder="Tu mensaje aquí ..." required
+                                        minlength="10" maxlength="1000"></textarea>
+                                </fieldset>
+                                <fieldset class="mt-4">
+                                    <button name="button" type="submit" class="contact-submit butn"
+                                        data-submit="...Sending">
+                                        Enviar
+                                    </button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--Pages  Banner Section End -->
-
-
-    <form id="contact">
-        <fieldset>
-            <input class="contact-form" placeholder="Su nombre" type="text" tabindex="1" required
-                minlength="6" maxlength="100">
-        </fieldset>
-        <fieldset>
-            <input class="contact-email" placeholder="Tu correo electrónico" type="email" tabindex="2"
-                required>
-        </fieldset>
-        <fieldset>
-            <input class="contact-form" placeholder="Tu número de teléfono" type="text" tabindex="3"
-                required minlength="10" maxlength="100">
-        </fieldset>
-        <fieldset>
-            <input class="contact-form" placeholder="Propósito de su consulta" type="text" tabindex="3"
-                required minlength="10" maxlength="100">
-        </fieldset>
-        <fieldset>
-            <textarea name="message" class="message" placeholder="Tu mensaje aquí ..." required
-                minlength="10" maxlength="1000"></textarea>
-        </fieldset>
-        <fieldset class="mt-4">
-            <button name="button" type="submit" class="contact-submit butn" data-submit="...Sending">
-                Enviar
-            </button>
-        </fieldset>
-    </form>
 
 
 
 
-  
+
+
+
+
 
     <!-- Footer Start -->
     <footer class="site-footer bg_dark">

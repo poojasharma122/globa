@@ -31,3 +31,27 @@ $('.single-item-slider').slick({
 				</button>`
   });
   // Slider JS End
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelectorAll(".dropdown-toggle");
+
+    dropdown.forEach(toggle => {
+        toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+            const li = this.parentElement;
+
+
+            document.querySelectorAll(".navigation-bar li.submenu-open").forEach(item => {
+                if (item !== li) {
+                    item.classList.remove("submenu-open");
+                }
+            });
+
+            li.classList.toggle("submenu-open");
+        });
+    });
+});
+

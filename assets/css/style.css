@@ -339,7 +339,8 @@ span.theme_bold {
 .brand-container_mobile {
     display: none;
 }
-.brand-container_mobile a{
+
+.brand-container_mobile a {
     background-image: url(../images/logo_mobile.svg);
 }
 
@@ -362,7 +363,7 @@ span.theme_bold {
     background-size: contain;
     background-repeat: no-repeat;
     height: 5rem;
-    width:18.75rem ;
+    width: 18.75rem;
     background-image: url(../images/logo.svg);
 }
 
@@ -389,44 +390,69 @@ span.theme_bold {
 
 .navigation-menu ul li a,
 .menu_right ul li a {
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    line-height: normal;
-    position: relative;
+    text-decoration: none !important;
+    border: none !important;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: #8b572a;
-    letter-spacing: 1px;
     font-weight: 500;
+    padding: 10px;
+    line-height: 1 !important;
+    position: relative;
+
 }
 
 .navigation-menu ul li a::after,
 .menu_right ul li a::after {
     content: '';
     position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    border-radius: 5px;
-    height: 1.5px;
     bottom: 0;
     left: 0;
-    right: 0;
-    background: #8b572a;
+    height: 1.5px;
+    width: 100%;
+    background-color: #8b572a;
+    transform: scaleX(0);
     transform-origin: center;
-    transition: all 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    pointer-events: none;
 }
 
-.navigation-menu ul li a.active::after,
-.menu_right ul li a.active::after {
-    transform: scaleX(0.9);
-    background: #8b572a;
-    transform-origin: center;
+.navigation-menu ul li a.dropdown-toggle-toggle::after {
+    height: 1.5px !important;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+    background-color: #8b572a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: '';
+    display: block;
 }
 
 .navigation-menu ul li a:hover::after,
-.menu_right ul li a:hover::after {
+.navigation-menu ul li a.active::after,
+.menu_right ul li a:hover::after,
+.menu_right ul li a.active::after {
     transform: scaleX(0.9);
 }
+
+.navigation-menu ul li a.dropdown-toggle-toggle::after {
+    height: 1.5px !important;         
+    background-color: #8b572a !important;
+    margin-left: 0 !important;
+    border: none,  !important;
+}
+
+.navigation-menu ul li a.dropdown-toggle-toggle:hover::after,
+.navigation-menu ul li a.dropdown-toggle-toggle.active::after {
+    transform: scaleX(0.9);
+}
+
+
+
 
 .menu-close-btn {
     display: none;
@@ -463,7 +489,7 @@ span.theme_bold {
     transform: translateY(-3px);
 }
 
-.sticky-header .social-links a svg  {
+.sticky-header .social-links a svg {
     fill: #8b572a;
     height: 100%;
     width: 100%;
@@ -479,6 +505,7 @@ span.theme_bold {
     position: relative;
 }
 
+
 .navigation-bar li ul.submenu {
     display: block;
     position: absolute;
@@ -487,7 +514,7 @@ span.theme_bold {
     background: #fff;
     border: 1px solid #2222220e;
     top: calc(100% + 60px);
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
     transition: all 0.2s linear;
     opacity: 0;
@@ -496,7 +523,7 @@ span.theme_bold {
     z-index: 99;
 }
 
-.navigation-bar li:hover ul.submenu {
+.navigation-bar li.submenu-open>ul.submenu {
     opacity: 1;
     visibility: visible;
     top: 100%;
@@ -587,7 +614,7 @@ span.theme_bold {
     opacity: 1;
 }
 
-.hotel_cat_cards  button.slick-prev {
+.hotel_cat_cards button.slick-prev {
     left: 0;
     z-index: 1;
 }
@@ -616,6 +643,7 @@ span.theme_bold {
     opacity: 1;
     transform: scale(1.1);
 }
+
 /* Home Category Slider CSS End */
 
 /* After Banner CSS Start */
@@ -624,32 +652,40 @@ span.theme_bold {
     font-weight: 500;
     line-height: 1.4;
 }
+
 .after_banner_wrap h4 {
     color: #191919;
     font-size: 1.7rem;
 }
-hr{
+
+hr {
     margin: 0;
 }
+
 .home_why_us_img {
     height: 18.75rem;
     width: 100%;
     margin-bottom: 1.25rem;
 }
+
 .home_why_us_card {
     background-color: #fff;
     height: 100%;
     transition: 0.2s all ease-in-out;
 }
+
 .home_why_us_card:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .home_why_us_txt {
     padding: 0 1rem 1rem 1rem;
 }
-.underline{
+
+.underline {
     position: relative;
 }
+
 .underline::after {
     content: '';
     position: absolute;
@@ -659,9 +695,11 @@ hr{
     bottom: -10px;
     left: 0;
 }
-.underline_theme{
+
+.underline_theme {
     position: relative;
 }
+
 .underline_theme::after {
     content: '';
     position: absolute;
@@ -671,9 +709,11 @@ hr{
     bottom: -10px;
     left: 0;
 }
-.underline_white{
+
+.underline_white {
     position: relative;
 }
+
 .underline_white::after {
     content: '';
     position: absolute;
@@ -695,29 +735,36 @@ hr{
     fill: #212529;
     margin-right: 0.3125rem;
 }
-.home_explore_card_txt p svg ,.location_svg svg{
+
+.home_explore_card_txt p svg,
+.location_svg svg {
     height: 15px;
     width: 20px;
     margin-top: -3px;
     fill: #212529;
     margin-right: 0.3125rem;
 }
+
 .home_explore_card_img {
     height: 300px;
     width: 100%;
     margin-bottom: 1.25rem;
 }
+
 .home_explore_card {
     background-color: #ffff;
     height: 100%;
     transition: 0.2s all ease-in-out;
 }
-.home_explore_card:hover{
+
+.home_explore_card:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .home_explore_card_txt {
-    padding: 0 1rem  1.25rem 1rem;
+    padding: 0 1rem 1.25rem 1rem;
 }
+
 /* Home Location Cards CSS End*/
 .hotel_of_month_card {
     position: relative;
@@ -791,22 +838,26 @@ hr{
     margin: 0 auto;
     font-size: 1.2rem;
 }
+
 /* Home Start CSS Start*/
 .home_plan_img_outer {
     height: 60px;
     width: 100%;
     margin-bottom: 30px;
 }
+
 .home_plan_img_outer.icon_img {
     height: 250px;
     width: 100%;
     margin-bottom: 30px;
 }
-.home_plan_img{
+
+.home_plan_img {
     height: 60px;
     width: 60px;
 }
-.home_plan_img.icon_img{
+
+.home_plan_img.icon_img {
     height: 100%;
     width: 100%;
 }
@@ -819,9 +870,10 @@ hr{
 }
 
 
-.home_plan_cards:hover{
+.home_plan_cards:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 /* Home Start CSS End*/
 
 
@@ -976,14 +1028,17 @@ hr{
     transition: 0.2s all ease-in-out;
     text-underline-offset: 10px;
 }
-.footer-contact a:hover{
+
+.footer-contact a:hover {
     text-decoration: underline;
 
 }
+
 .footer-logo h5 {
     line-height: 1.4;
     font-size: 1.2rem;
 }
+
 /* footer end  */
 
 /* Inner Pages CSS Start */
@@ -997,10 +1052,12 @@ hr{
     line-height: 1.3;
     font-size: 1.5rem;
 }
+
 .how_we_select_cards_content ul li {
     margin-left: 1.25rem;
     list-style-type: disc;
 }
+
 .hotel_desc_top_banner p svg {
     height: 15px;
     width: 20px;
@@ -1008,19 +1065,23 @@ hr{
     fill: #212529;
     margin-right: 0.3125rem;
 }
+
 .hotel_desc_top_banner h4 {
     font-size: 2rem;
 }
+
 .third_party_link {
     display: inline-block;
     color: #8b572a;
     text-decoration: underline;
     text-underline-offset: 6px;
 }
+
 .after_banner_wrap ul li {
     list-style-type: disc;
     margin-left: 1.25rem;
 }
+
 .hotel_desc_third_btn {
     color: #8b572a;
     font-weight: 500;
@@ -1028,32 +1089,37 @@ hr{
     text-underline-offset: 6px;
     font-size: 1.2rem;
 }
-.no_padding{
+
+.no_padding {
     padding: 0;
 }
-.home_plan_cards.no_padding   .how_we_select_cards_content {
+
+.home_plan_cards.no_padding .how_we_select_cards_content {
     padding: 0 1.25rem 1.25rem;
 }
+
 .booking-table {
     width: 100%;
     max-width: 700px;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-  }
-  
-  .booking-table th,
-  .booking-table td {
+}
+
+.booking-table th,
+.booking-table td {
     border: 1px solid #4c4c4c;
     padding: 8px;
     text-align: left;
-  }
-  
-  .booking-table th {
+}
+
+.booking-table th {
     background-color: #f2f2f2;
-  }
-  .home_plan_cards.diff .home_plan_img_outer.icon_img {
+}
+
+.home_plan_cards.diff .home_plan_img_outer.icon_img {
     height: 350px;
 }
+
 /* Inner Pages CSS End */
 
 /* Contact Us CSS Start */
@@ -1153,7 +1219,8 @@ fieldset {
 
 .modal-title {
     color: #000;
-    font-size:1.5rem  !important;
+    font-size: 1.5rem !important;
     font-family: "Open Sans", serif;
 }
+
 /* Contact Us CSS End */

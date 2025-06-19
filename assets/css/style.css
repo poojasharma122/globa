@@ -1379,3 +1379,35 @@ fieldset {
     color: #fff;
 }
 /* Footer Pages CSS End*/
+
+
+
+
+.header2 .header_icons {
+    display: flex;
+    justify-content: center;
+}
+
+.header2 .navigation-bar {
+
+    align-items: center;
+}
+
+.header2 .brand-link {
+    width: 12.75rem;
+    height: 3rem;
+}
+
+.header2 .header_with_select {
+    justify-content: right;
+    margin-bottom: 0;
+}
+
+.header2 .header_select {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin-bottom: -180px;
+    z-index: 99;
+    position: relative;
+}

@@ -327,7 +327,12 @@ span.theme_bold {
     background-color: #222222;
 
 }
-
+.navigation-menu {
+    margin-right: auto;
+}
+.menu_right {
+    margin-left: auto;
+}
 .main-container {
     display: flex;
     align-items: center;

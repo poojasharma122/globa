@@ -30,7 +30,7 @@
                     <ul>
                         <li><a href="./">Hogar</a></li>
                         <li>
-                            <a  href="javascript:void(0)" class="dropdown-toggle active">Mejores críticas
+                            <a href="javascript:void(0)" class="dropdown-toggle active">Mejores críticas
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
                                     width="24px" fill="#1cc3b2">
                                     <path d="M480-360 280-560h400L480-360Z"></path>
@@ -80,7 +80,7 @@
                         </li>
                         <li><a class="desktop_hidden" href="./about">Sobre nosotros</a></li>
                         <li><a class="desktop_hidden" data-bs-target="#exampleModalToggle1"
-                            data-bs-toggle="modal">Contacta con nosotros</a></li>
+                                data-bs-toggle="modal">Contacta con nosotros</a></li>
                     </ul>
                     <div class="menu-close-btn"></div>
                 </div>
@@ -115,9 +115,8 @@
                 <div class="menu_right">
                     <ul>
                         <li><a class="mobile_hidden" href="./about-us">Sobre nosotros</a></li>
-                        <li><a class="mobile_hidden"
-                            data-bs-target="#exampleModalToggle1"
-                            data-bs-toggle="modal">Contacta con nosotros</a>
+                        <li><a class="mobile_hidden" data-bs-target="#exampleModalToggle1"
+                                data-bs-toggle="modal">Contacta con nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -288,13 +287,13 @@
                     </li>
                     <li>
                         <p>
-                            Senderos para caminar entre viñedos y árboles frutales 
+                            Senderos para caminar entre viñedos y árboles frutales
                         </p>
                     </li>
                     <li>
                         <p>
                             Posibilidad de reservar experiencias privadas como catas de vino, talleres de cocina o
-                            tratamientos de bienest   
+                            tratamientos de bienest
                         </p>
                     </li>
                 </ul>
@@ -309,8 +308,9 @@
                     Ubicación
                 </h4>
                 <p class="mb-3">
-                    Situado en el centro de la isla, <strong>Montuïri</strong> ofrece acceso rápido a diferentes puntos de interés
-sin renunciar a la paz absoluta
+                    Situado en el centro de la isla, <strong>Montuïri</strong> ofrece acceso rápido a diferentes puntos
+                    de interés
+                    sin renunciar a la paz absoluta
                 </p>
                 <ul class="my-3">
                     <li>
@@ -330,7 +330,7 @@ sin renunciar a la paz absoluta
                         <p>
                             <strong> Cerca de pueblos encantadores </strong> como Sineu, Santanyí o Algaida
                         </p>
-                    </li>                  
+                    </li>
                 </ul>
                 <p class="mb-4">
                     Finca Serena es, literalmente, el corazón tranquilo de Mallorca.
@@ -353,7 +353,7 @@ sin renunciar a la paz absoluta
                         <p>
                             <strong>
                                 Parejas en búsqueda de desconexión tota
-                            </strong>                  
+                            </strong>
                         </p>
                     </li>
                     <li>
@@ -374,7 +374,7 @@ sin renunciar a la paz absoluta
                         <p>
                             <strong>
                                 Personas que valoran la autenticidad y el equilibrio con la naturaleza
-                            </strong> 
+                            </strong>
                         </p>
                     </li>
                 </ul>
@@ -397,7 +397,8 @@ sin renunciar a la paz absoluta
                         lujo es sentirse en paz, donde cada detalle está pensado para cuidar cuerpo, mente y alma.
                     </p>
                     <p class="mb-5">
-                        <a href="https://www.fincaserenamallorca.com/en/" target="_blank" class="hotel_desc_third_btn">Consulta más detalles o reserva tu estancia aquí:</a>
+                        <a href="https://www.fincaserenamallorca.com/en/" target="_blank"
+                            class="hotel_desc_third_btn">Consulta más detalles o reserva tu estancia aquí:</a>
                     </p>
                     <hr>
                 </div>
@@ -471,42 +472,49 @@ sin renunciar a la paz absoluta
         </footer>
         <!-- Footer End -->
 
-        <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel1">Contacta con nosotras </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="contact">
-                        <fieldset>
-                            <input class="contact-form" placeholder="Ingrese su nombre completo" type="text" tabindex="1"
-                                required minlength="2" maxlength="100">
-                        </fieldset>
-                        <fieldset>
-                            <input class="contact-email" placeholder="Ingrese su dirección de correo electrónico" type="email"
-                                tabindex="2" required>
-                        </fieldset>
-                        <fieldset>
-                            <input class="contact-form" placeholder="Ingrese el propósito de su consulta" type="text"
-                                tabindex="3" required minlength="3" maxlength="100">
-                        </fieldset>
-                        <fieldset>
-                            <textarea name="message" class="message" placeholder="Escribe tu mensaje aquí..." required
-                                minlength="10" maxlength="1000"></textarea>
-                        </fieldset>
-                        <fieldset>
-                            <button name="button" type="submit" class="contact-submit butn" data-submit="...Sending">
-                                Enviar
-                            </button>
-                        </fieldset>
-                    </form>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Contacta con nosotros</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contact">
+                            <fieldset>
+                                <input class="contact-form" placeholder="Su nombre" type="text" tabindex="1" required
+                                    minlength="6" maxlength="100">
+                            </fieldset>
+                            <fieldset>
+                                <input class="contact-email" placeholder="Tu correo electrónico" type="email"
+                                    tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <input class="contact-form" placeholder="Tu número de teléfono" type="text" tabindex="3"
+                                    required minlength="10" maxlength="100">
+                            </fieldset>
+                            <fieldset>
+                                <input class="contact-form" placeholder="Propósito de su consulta" type="text"
+                                    tabindex="3" required minlength="10" maxlength="100">
+                            </fieldset>
+                            <fieldset>
+                                <textarea name="message" class="message" placeholder="Tu mensaje aquí ..." required
+                                    minlength="10" maxlength="1000"></textarea>
+                            </fieldset>
+                            <fieldset class="mt-4">
+                                <button name="button" type="submit" class="contact-submit butn"
+                                    data-submit="...Sending">
+                                    Enviar
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- Modal -->
 
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/slick.js"></script>

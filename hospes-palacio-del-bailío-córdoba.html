@@ -328,43 +328,47 @@
             </div>
         </footer>
         <!-- Footer End -->
-
-        <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel1">Contacta con nosotras </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="contact">
-                        <fieldset>
-                            <input class="contact-form" placeholder="Ingrese su nombre completo" type="text" tabindex="1"
-                                required minlength="2" maxlength="100">
-                        </fieldset>
-                        <fieldset>
-                            <input class="contact-email" placeholder="Ingrese su dirección de correo electrónico" type="email"
-                                tabindex="2" required>
-                        </fieldset>
-                        <fieldset>
-                            <input class="contact-form" placeholder="Ingrese el propósito de su consulta" type="text"
-                                tabindex="3" required minlength="3" maxlength="100">
-                        </fieldset>
-                        <fieldset>
-                            <textarea name="message" class="message" placeholder="Escribe tu mensaje aquí..." required
-                                minlength="10" maxlength="1000"></textarea>
-                        </fieldset>
-                        <fieldset>
-                            <button name="button" type="submit" class="contact-submit butn" data-submit="...Sending">
-                                Enviar
-                            </button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
+         
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Contacta con nosotros</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form id="contact">
+            <fieldset>
+              <input class="contact-form" placeholder="Su nombre" type="text" tabindex="1" required minlength="6"
+                maxlength="100">
+            </fieldset>
+            <fieldset>
+              <input class="contact-email" placeholder="Tu correo electrónico" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <input class="contact-form" placeholder="Tu número de teléfono" type="text" tabindex="3" required minlength="10"
+                maxlength="100">
+            </fieldset>
+            <fieldset>
+              <input class="contact-form" placeholder="Propósito de su consulta" type="text" tabindex="3" required minlength="10"
+                maxlength="100">
+            </fieldset>
+            <fieldset>
+              <textarea name="message" class="message" placeholder="Tu mensaje aquí ..." required minlength="10"
+                maxlength="1000"></textarea>
+            </fieldset>
+            <fieldset class="mt-4">
+              <button name="button" type="submit" class="contact-submit butn" data-submit="...Sending">
+                Enviar
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
+  <!-- Modal -->
 
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/slick.js"></script>

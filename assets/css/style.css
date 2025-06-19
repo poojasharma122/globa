@@ -419,7 +419,7 @@ span.theme_bold {
     pointer-events: none;
 }
 
-.navigation-menu ul li a.dropdown-toggle-toggle::after {
+.navigation-menu ul li a.dropdown-toggle::after {
     height: 1.5px !important;
     transform: scaleX(0);
     transition: transform 0.3s ease-out;
@@ -439,15 +439,15 @@ span.theme_bold {
     transform: scaleX(0.9);
 }
 
-.navigation-menu ul li a.dropdown-toggle-toggle::after {
+.navigation-menu ul li a.dropdown-toggle::after {
     height: 1.5px !important;         
     background-color: #8b572a !important;
     margin-left: 0 !important;
     border: none,  !important;
 }
 
-.navigation-menu ul li a.dropdown-toggle-toggle:hover::after,
-.navigation-menu ul li a.dropdown-toggle-toggle.active::after {
+.navigation-menu ul li a.dropdown-toggle:hover::after,
+.navigation-menu ul li a.dropdown-toggle.active::after {
     transform: scaleX(0.9);
 }
 

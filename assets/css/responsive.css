@@ -54,7 +54,7 @@
         display: block;
     }
     .brand-container-desktop, .header_icons ,.menu_right  {
-        display: none;
+        display: none !important;
     }
     .brand-link { 
         width: 10.75rem;
@@ -75,7 +75,6 @@
     .navigation-menu ul.submenu li a::after{
         background-color: #8b572a;
     }
-
 }
 
 

@@ -1213,15 +1213,7 @@ fieldset {
     color: #444546;
 }
 
-.modal {
-    z-index: 99999;
-}
 
-.modal-title {
-    color: #000;
-    font-size: 1.5rem !important;
-    font-family: "Open Sans", serif;
-}
 
 /* Contact Us CSS End */
 

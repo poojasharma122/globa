@@ -60,7 +60,21 @@
         width: 10.75rem;
         background-position: center;
     }
- 
+    .navigation-menu ul li a {
+        color: #fff;
+    }
+    .navigation-bar li a svg {
+        fill: #fff;
+    }
+    .navigation-menu ul li a::after, .navigation-menu ul li a.dropdown-toggle.active::after {
+        background-color: #fff !important;
+    }
+    .navigation-menu ul.submenu li a {
+        color: #8b572a;
+    }
+    .navigation-menu ul.submenu li a::after{
+        background-color: #8b572a;
+    }
 
 }
 

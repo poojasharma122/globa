@@ -1051,5 +1051,7 @@ hr{
   .booking-table th {
     background-color: #f2f2f2;
   }
-
+  .home_plan_cards.diff .home_plan_img_outer.icon_img {
+    height: 350px;
+}
 /* Inner Pages CSS End */

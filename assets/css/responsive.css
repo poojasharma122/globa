@@ -93,6 +93,12 @@
     .brand-link {
         width: 7.75rem;
     } 
+    .page_table1{
+        overflow-x: scroll;
+      }
+      .booking-table {
+        min-width: 600px;
+    }
 }
 
 @media screen and (max-width:480px){

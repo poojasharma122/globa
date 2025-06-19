@@ -463,7 +463,7 @@ span.theme_bold {
     transform: translateY(-3px);
 }
 
-.sticky-header .social-links a svg {
+.sticky-header .social-links a svg  {
     fill: #8b572a;
     height: 100%;
     width: 100%;
@@ -695,7 +695,7 @@ hr{
     fill: #212529;
     margin-right: 0.3125rem;
 }
-.home_explore_card_txt p svg {
+.home_explore_card_txt p svg ,.location_svg svg{
     height: 15px;
     width: 20px;
     margin-top: -3px;
@@ -1034,4 +1034,22 @@ hr{
 .home_plan_cards.no_padding   .how_we_select_cards_content {
     padding: 0 1.25rem 1.25rem;
 }
+.booking-table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .booking-table th,
+  .booking-table td {
+    border: 1px solid #4c4c4c;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .booking-table th {
+    background-color: #f2f2f2;
+  }
+
 /* Inner Pages CSS End */

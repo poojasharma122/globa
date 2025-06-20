@@ -883,12 +883,15 @@ hr {
     height: 100%;
     transition: 0.2s all ease-in-out;
 }
-
-
 .home_plan_cards:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.hotel_map iframe {
+    width: 100%;
+}
+.hotel_map  {
+margin-bottom: 2.5rem;
+}
 /* Home Start CSS End*/
 
 

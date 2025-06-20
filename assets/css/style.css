@@ -868,7 +868,11 @@ hr {
     width: 100%;
     margin-bottom: 30px;
 }
-
+.home_plan_cards.big_img  .home_plan_img_outer.icon_img {
+    height: 30.625rem;
+    width: 100%;
+    margin-bottom: 30px;
+}
 .home_plan_img {
     height: 3.75rem;
     width: 3.75rem;

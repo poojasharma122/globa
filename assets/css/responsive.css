@@ -1,4 +1,4 @@
-@media screen and (max-width:1399px){
+@media screen and (max-width:1399px) {
     .butn.banner_selection_btn {
         padding: 0.9375rem;
     }
@@ -111,8 +111,13 @@
     .header_select {
         grid-template-columns: 1fr 1fr;
     }
+
     .footer-links {
         padding-left: 0;
+    }
+
+    .inner_pages_banner {
+        height: 28.375rem;
     }
 }
 
@@ -130,42 +135,59 @@
         margin: 0 auto;
         width: 100%;
     }
+
     .header_select select {
-        font-size: 0.9rem; 
-        padding: 0.75rem 1rem; 
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
         max-width: 100%;
         word-wrap: break-word;
-      }
-      .slick-list.draggable {
+    }
+
+    .slick-list.draggable {
         height: 32.75rem;
     }
-    .slick-prev svg, .slick-next svg {
+
+    .slick-prev svg,
+    .slick-next svg {
         width: 4rem;
         height: 4rem;
     }
+
     .footer-top {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .footer-logo p {
         font-size: 1.1rem;
     }
-    .footer-links li a, .footer-contact li {
+
+    .footer-links li a,
+    .footer-contact li {
         font-size: 1.1rem;
     }
+
     .footer-contact {
         margin-top: 2.5rem;
     }
+
     .footer-bottom {
         justify-content: center;
         flex-direction: column;
     }
+
     .ssl_logo {
         margin-top: 1.25rem;
     }
+
     .footer-bottom p {
         text-align: center;
         line-height: 1.5;
-        }
+    }
+
+    .pt-4 {
+        padding-top: 1rem !important;
+    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -185,47 +207,70 @@
         width: 100%;
         min-width: 450px;
     }
+
     .slick-list.draggable {
         height: 25.75rem;
     }
+
     .section_heading {
         font-size: 2rem;
     }
+
     .pb-5 {
-        padding-bottom: 2.5rem!important;
+        padding-bottom: 2.5rem !important;
     }
+
     .py-5 {
-        padding-top: 2.5rem!important;
-        padding-bottom: 2.5rem!important;
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
     }
+
     .hotel_of_month_card {
         height: 30.5rem;
 
     }
+
     .pb-7 {
         padding-bottom: 2.375rem;
     }
-    .home_plan_img {
+
+    .home_plan_sec .home_plan_img {
         margin: 0 auto;
     }
-    .home_plan_sec.pt-5 .home_plan_cards {
+
+    .how_we_select_sec.home_plan_sec .home_plan_img {
+        margin: 0;
+    }
+
+    .home_plan_sec .home_plan_cards {
         text-align: center;
     }
+
+    .how_we_select_sec.home_plan_sec .home_plan_cards {
+        text-align: left;
+    }
+
     .footer-logo p {
         font-size: 1rem;
     }
-    .footer-links li a, .footer-contact li {
+
+    .footer-links li a,
+    .footer-contact li {
         font-size: 1rem;
     }
+
     .footer-links {
         padding-left: 2.5rem;
     }
+
     .footer-bottom p {
         font-size: 0.9rem;
     }
+
     .footer-logo a {
         width: 8.375rem;
     }
+
     .home_why_us_img {
         height: 14.75rem;
     }
@@ -235,24 +280,32 @@
     .navigation-bar li ul.submenu {
         min-width: 330px;
     }
+
     .header_select {
         position: relative;
-      }
-      
-      .slick-list.draggable {
+    }
+
+    .slick-list.draggable {
         height: 20.75rem;
     }
+
     .footer-top {
         grid-template-columns: 1fr;
     }
+
     .footer-links {
         padding-left: 0;
     }
+
     .footer-contact {
         margin-top: 0rem;
     }
+
     .ssl_logo {
         width: 7.75rem;
     }
 
+    .inner_pages_banner {
+        height: 23.375rem;
+    }
 }

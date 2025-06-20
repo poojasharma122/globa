@@ -1082,7 +1082,7 @@ letter-spacing: 0.5px;
     font-size: 2rem;
 }
 
-.third_party_link {
+.third_party_link ,.hotel_desc_third_btn{
     display: inline-block;
     color: #8b572a;
     text-decoration: underline;

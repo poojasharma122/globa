@@ -63,7 +63,7 @@ ul li {
 
 a {
     display: inline-block;
-    text-decoration: none !important;
+    text-decoration: none ;
     font-family: "Raleway", sans-serif;
 }
 

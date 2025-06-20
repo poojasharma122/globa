@@ -55,3 +55,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const select = document.getElementById('pageSelect');
+  const originalOptions = Array.from(select.options).map(opt => ({
+    text: opt.text,
+    value: opt.value
+  }));
+
+  function handleResize() {
+    if (window.innerWidth < 480) {
+      // Clear and rebuild options with truncated text
+      select.innerHTML = '';
+      originalOptions.forEach(opt => {
+        const option = document.createElement('option');
+        option.value = opt.value;
+        option.text = opt.text.length > 40 ? opt.text.substring(0, 30) + '...' : opt.text;
+        option.title = opt.text; // Full text as tooltip
+        select.appendChild(option);
+      });
+    } else {
+      // Restore original options
+      select.innerHTML = '';
+      originalOptions.forEach(opt => {
+        const option = document.createElement('option');
+        option.value = opt.value;
+        option.text = opt.text;
+        select.appendChild(option);
+      });
+    }
+  }
+
+  // Initial call
+  handleResize();
+  
+  // Add resize listener with debounce
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(handleResize, 100);
+  });
+});

@@ -226,6 +226,9 @@
     .footer-logo a {
         width: 8.375rem;
     }
+    .home_why_us_img {
+        height: 14.75rem;
+    }
 }
 
 @media screen and (max-width:480px) {

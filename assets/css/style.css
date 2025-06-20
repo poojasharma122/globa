@@ -379,6 +379,7 @@ span.theme_bold {
     background-image: url(../images/logo.svg);
 }
 
+
 .menu-toggle-btn {
     display: none;
     width: 2.5rem;
@@ -1453,4 +1454,5 @@ gap: 10px;
 .header_icons .brand-container_desktop  .brand-link {
     height: 3rem;
     width: 11.75rem;
+    background-image: url(../images/logo_mobile.svg);
 }

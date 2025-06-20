@@ -285,7 +285,7 @@ span.theme_bold {
     border-radius: 50%;
     z-index: -1;
     background-color: #000;
-    transition: 1s ease;
+    transition: 1.5s ease;
 }
 
 .butn::before {
@@ -305,8 +305,8 @@ span.theme_bold {
 
 .butn:hover::after,
 .butn:hover::before {
-    height: 35.625rem;
-    width: 35.625rem;
+    height: 55.625rem;
+    width: 55.625rem;
 }
 
 /* Button CSS End*/

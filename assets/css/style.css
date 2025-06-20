@@ -1444,3 +1444,13 @@ gap: 10px;
     height: 100%;
     width: 100%;
 }
+
+
+.header_icons {
+    display: flex;
+    justify-content: center;
+}
+.header_icons .brand-container_desktop  .brand-link {
+    height: 3rem;
+    width: 11.75rem;
+}

@@ -1456,3 +1456,7 @@ gap: 10px;
     width: 11.75rem;
     background-image: url(../images/logo_mobile.svg);
 }
+.after_banner_wrap h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+}

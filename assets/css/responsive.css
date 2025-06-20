@@ -96,6 +96,9 @@
     .navigation-menu ul.submenu li a::after {
         background-color: #8b572a;
     }
+    .header2 .brand-link {
+        background-position: left;
+    }
 }
 
 
@@ -336,6 +339,13 @@
     .footer_pages_banner h1 {
         line-height: 1.5;
         font-size: 1.7rem;
+    }
+    .after_banner_wrap h1 {
+        font-size: 1.7rem;
+        line-height: 1.3;
+    }
+    .after_banner_wrap h4 {
+        font-size: 1.4rem;
     }
 }
 

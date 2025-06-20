@@ -879,7 +879,7 @@ hr {
     margin-bottom: 30px;
 }
 .home_plan_cards.big_img  .home_plan_img_outer.icon_img {
-    height: 30.625rem;
+    height: 18.625rem;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -1427,4 +1427,20 @@ fieldset {
     margin-bottom: -11.25rem;
     z-index: 99;
     position: relative;
+}
+
+
+
+.hotel_map_wrap {
+    display: flex;
+gap: 10px;
+}
+.iframe_content {
+    width: 50%;
+}
+
+
+.hotel_map_iframe iframe{
+    height: 100%;
+    width: 100%;
 }

@@ -122,6 +122,15 @@
     .home_plan_cards.big_img  .home_plan_img_outer.icon_img {
         height: 25.625rem;
     }
+    .iframe_content {
+        width: 100%;
+    }
+    .hotel_map_wrap {
+         flex-direction: column;
+    }
+    .hotel_map_iframe iframe{
+        height: 25rem;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -209,6 +218,9 @@
     }
     .contact-us-group {
         padding: 0;
+    }
+    .hotel_map_iframe iframe{
+        height: 20rem;
     }
 }
 

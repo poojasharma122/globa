@@ -862,7 +862,12 @@ hr {
     width: 100%;
     margin-bottom: 1.875rem;
 }
-
+.how_we_select_cards_content p svg {
+    height: 17px;
+    width: 17px;
+    fill: #4c4c4c;
+    margin-top: -4px;
+}
 .home_plan_img_outer.icon_img {
     height: 15.625rem;
     width: 100%;
@@ -1139,7 +1144,8 @@ letter-spacing: 0.5px;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
-    max-width: 31.25rem;
+    max-width: 100%;
+    width: 100%;
 }
 
 .contact_us_content .row {

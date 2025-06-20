@@ -1138,6 +1138,9 @@ letter-spacing: 0.5px;
 /* Inner Pages CSS End */
 
 /* Contact Us CSS Start */
+.inner_pages_banner.contact_banner {
+    height: 25rem;
+}
 #contact {
     background-image: url("../images/how-we-compare-bg.png");
     background-position: center;

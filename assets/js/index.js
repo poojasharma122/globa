@@ -18,7 +18,7 @@ AOS.init({
 
 
 // Slider JS Start
-$('.single-item-slider').slick({
+$('.single_item_slider').slick({
   dots: false,
   infinite: true,
   speed: 300,

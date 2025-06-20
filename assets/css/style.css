@@ -592,11 +592,13 @@ span.theme_bold {
 
 /* Home Category Slider CSS Start */
 .hotel_cat_cards {
-    /* height: 100%; */
     overflow: hidden;
 }
 .slick-list.draggable {
     height: 43.75rem;
+}
+body .slick-track {
+    height: 100%;
 }
 .banner_slides {
     height: 100%;

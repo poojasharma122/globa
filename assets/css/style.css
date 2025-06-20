@@ -528,8 +528,9 @@ span.theme_bold {
     background: #fff;
     border: 1px solid #2222220e;
     top: calc(100% + 60px);
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    left: 0;
+    /* transform: translateX(-50%); */
     transition: all 0.2s linear;
     opacity: 0;
     visibility: hidden;

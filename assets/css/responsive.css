@@ -99,6 +99,10 @@
     .header2 .brand-link {
         background-position: left;
     }
+    .navigation-bar li ul.submenu {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 

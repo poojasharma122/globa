@@ -223,6 +223,9 @@
     .footer-bottom p {
         font-size: 0.9rem;
     }
+    .footer-logo a {
+        width: 8.375rem;
+    }
 }
 
 @media screen and (max-width:480px) {

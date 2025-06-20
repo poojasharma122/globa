@@ -187,7 +187,12 @@
     .pt-4 {
         padding-top: 1rem !important;
     }
-
+    .img_part {
+        height: 20rem;
+    }
+    .text_part {
+        padding: 2rem 0 0 0;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -274,6 +279,18 @@
     .home_why_us_img {
         height: 14.75rem;
     }
+    .hotel_desc_top_banner h4 {
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+    .img_part {
+        height: 15rem;
+    }
+    .text_part h3 {
+        font-size: 1.7rem;
+
+    }
+
 }
 
 @media screen and (max-width:480px) {
@@ -307,5 +324,11 @@
 
     .inner_pages_banner {
         height: 23.375rem;
+    }
+    .text_part {
+        padding: 1.5rem 0 0 0;
+    }
+    .section_heading {
+        font-size: 1.8rem;
     }
 }

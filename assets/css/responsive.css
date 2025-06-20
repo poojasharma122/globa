@@ -193,6 +193,20 @@
     .text_part {
         padding: 2rem 0 0 0;
     }
+    .form-image,.form-container {
+        width: 100%;
+        padding: 0;
+    }
+    #contact {
+        max-width: 100%;
+    }
+    .form-image {
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+    .contact-us-group {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -290,7 +304,19 @@
         font-size: 1.7rem;
 
     }
-
+    .form-image {
+        height: 16rem;
+    }
+    .footer_pages_banner {
+        height: 17rem;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.6rem;
+    }
+    .footer_pages_banner h1 {
+        line-height: 1.5;
+        font-size: 1.7rem;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -330,5 +356,11 @@
     }
     .section_heading {
         font-size: 1.8rem;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.4rem;
+    }
+    .footer_pages_banner h1 {
+        font-size: 1.5rem;
     }
 }

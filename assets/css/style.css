@@ -318,7 +318,6 @@ span.theme_bold {
     margin: 0 auto;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
-    padding: 0 40px;
     padding: 0.9375rem 0px;
     background-color: #f5f5f7;
 }
@@ -403,7 +402,7 @@ span.theme_bold {
     gap: 6px;
     color: #8b572a;
     font-weight: 500;
-    padding: 10px;
+    padding: 0.625rem;
     line-height: 1 !important;
     position: relative;
     font-size: 1.1rem;
@@ -516,7 +515,7 @@ span.theme_bold {
     display: block;
     position: absolute;
     width: max-content;
-    padding: 20px;
+    padding: 1.25rem;
     background: #fff;
     border: 1px solid #2222220e;
     top: calc(100% + 60px);
@@ -537,12 +536,12 @@ span.theme_bold {
 
 .nav-button {
     display: inline-block;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 4px;
-    margin-left: 10px;
+    margin-left: 0.65rem;
 }
 
 .nav-button:hover {
@@ -553,26 +552,29 @@ span.theme_bold {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom:3.125rem;
 }
 
 .header_select select {
     border: none;
     outline: none;
     padding: 0.9375rem 1.875rem;
-    min-width: 300px;
+    /* min-width: 18.75rem; */
     font-size: 1.1rem;
     line-height: 1;
     text-transform: uppercase;
     font-weight: 500;
     color: #818181;
-    width: auto;
+    width: 100%;
+    white-space: nowrap;       
+    overflow: hidden;          
+    text-overflow: ellipsis;
 }
 
 .header_select {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 15px;
+    gap: 0.935rem;
 }
 
 .brand-container-desktop p {
@@ -591,7 +593,7 @@ span.theme_bold {
     overflow: hidden;
 }
 .slick-list.draggable {
-    height: 700px;
+    height: 43.75rem;
 }
 .banner_slides {
     height: 100%;
@@ -613,12 +615,12 @@ span.theme_bold {
 
 .slide_content {
     text-align: center;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    font-size: 35px;
+    font-size: 2.1875rem;
     opacity: 1;
 }
 
@@ -639,8 +641,8 @@ span.theme_bold {
 
 .slick-prev svg,
 .slick-next svg {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     fill: #fff;
     opacity: 0.5;
     transition: all 0.3s ease;
@@ -699,7 +701,7 @@ hr {
     position: absolute;
     background: #4c4c4c;
     height: 2px;
-    width: 100px;
+    width: 6.25rem;
     bottom: -10px;
     left: 0;
 }
@@ -713,7 +715,7 @@ hr {
     position: absolute;
     background: #8b572a;
     height: 2px;
-    width: 70px;
+    width:4.375rem;
     bottom: -10px;
     left: 0;
 }
@@ -727,7 +729,7 @@ hr {
     position: absolute;
     background: #fff;
     height: 2px;
-    width: 70px;
+    width: 4.375rem;
     bottom: -10px;
     left: 0;
 }
@@ -737,8 +739,8 @@ hr {
 
 /* Home Location Cards CSS Start */
 .home_explore_card_txt h5 svg {
-    height: 15px;
-    width: 15px;
+    height: 0.9375rem;
+    width: 0.9375rem;
     margin-top: -3px;
     fill: #212529;
     margin-right: 0.3125rem;
@@ -746,15 +748,15 @@ hr {
 
 .home_explore_card_txt p svg,
 .location_svg svg {
-    height: 15px;
-    width: 20px;
+    height: 0.9375rem;
+    width: 1.25rem;
     margin-top: -3px;
     fill: #212529;
     margin-right: 0.3125rem;
 }
 
 .home_explore_card_img {
-    height: 300px;
+    height: 18.75rem;
     width: 100%;
     margin-bottom: 1.25rem;
 }
@@ -778,7 +780,7 @@ hr {
     position: relative;
     width: 100%;
     max-width: 100%;
-    height: 600px;
+    height: 37.5rem;
     margin: 0 auto;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -837,32 +839,32 @@ hr {
 
 .hotel_of_month_card:hover .card-hidden-content {
     opacity: 1;
-    max-height: 300px;
+    max-height: 18.75rem;
     transform: translateY(0);
 }
 
 .card-hidden-content p {
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
     font-size: 1.2rem;
 }
 
 /* Home Start CSS Start*/
 .home_plan_img_outer {
-    height: 60px;
+    height: 3.75rem;
     width: 100%;
     margin-bottom: 30px;
 }
 
 .home_plan_img_outer.icon_img {
-    height: 250px;
+    height: 15.625rem;
     width: 100%;
     margin-bottom: 30px;
 }
 
 .home_plan_img {
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
 }
 
 .home_plan_img.icon_img {
@@ -896,7 +898,7 @@ hr {
     outline: none;
     border: none;
     border-bottom: 1px solid #4c4c4c;
-    padding: 10px;
+    padding: 0.6235rem;
     color: #4c4c4c;
 }
 
@@ -923,7 +925,7 @@ hr {
 
 /* footer start  */
 .site-footer {
-    padding: 84px 0 10px;
+    padding: 5.25rem 0 0.625rem;
     color: #fff;
 }
 
@@ -936,8 +938,8 @@ hr {
 
 .footer-logo a {
     background-image: url("../images/logo_footer.svg");
-    width: 150px;
-    height: 60px;
+    width: 9.375rem;
+    height: 3.75rem;
 
 }
 
@@ -945,36 +947,27 @@ hr {
 .footer-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 0.9375rem;
 }
 
 .footer-top h4 {
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 1.375rem;
+    margin-bottom: 1.875rem;
 }
 
 .footer-links {
-    padding-left: 60px;
+    padding-left: 3.75rem;
 }
 
 .footer-links li a,
 .footer-contact li {
     color: #ffffffdb;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 300;
-    line-height: 120%;
+    line-height: 1.2;
     letter-spacing: -0.24px;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     transition: all 0.2s linear;
-}
-
-.footer-links li a:hover,
-.footer-contact li:hover {
-    color: var(--black);
-}
-
-.footer-contact li i {
-    margin-right: 10px;
 }
 
 .footer-bottom {
@@ -983,8 +976,8 @@ hr {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgb(255 255 255 / 80%);
-    padding-top: 35px;
-    margin-top: 35px;
+    padding-top: 2.1875rem;
+    margin-top: 2.1875rem;
 }
 
 .footer-bottom p {
@@ -995,20 +988,20 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 230px;
+    max-width: 14.375rem;
 }
 
 .social-icons li a {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     border: 1px solid #fff;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 1.375rem;
     transition: all 0.2s linear;
-    padding: 11px;
+    padding: 0.6875rem;
 }
 
 .social-icons li a:hover {
@@ -1016,8 +1009,8 @@ hr {
 }
 
 .ssl_logo {
-    height: 60px;
-    width: 140px;
+    height: 3.75rem;
+    width: 8.75rem;
 }
 
 .ssl_logo_inner {
@@ -1067,8 +1060,8 @@ hr {
 }
 
 .hotel_desc_top_banner p svg {
-    height: 15px;
-    width: 20px;
+    height: 0.9375rem;
+    width: 1.25rem;
     margin-top: -3px;
     fill: #212529;
     margin-right: 0.3125rem;
@@ -1108,7 +1101,7 @@ hr {
 
 .booking-table {
     width: 100%;
-    max-width: 700px;
+    max-width: 43.75rem;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
 }
@@ -1116,7 +1109,7 @@ hr {
 .booking-table th,
 .booking-table td {
     border: 1px solid #4c4c4c;
-    padding: 8px;
+    padding: 0.5rem;
     text-align: left;
 }
 
@@ -1125,7 +1118,7 @@ hr {
 }
 
 .home_plan_cards.diff .home_plan_img_outer.icon_img {
-    height: 350px;
+    height: 21.875rem;
 }
 
 /* Inner Pages CSS End */
@@ -1137,7 +1130,7 @@ hr {
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
 }
 
 .contact_us_content .row {
@@ -1168,7 +1161,7 @@ fieldset {
     border: 1px solid #ccc;
     background: #FFF;
     margin: 0 0 5px;
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 5px;
     font-size: 1rem;
 }
@@ -1184,7 +1177,7 @@ fieldset {
 
 
 #contact textarea {
-    height: 100px;
+    height: 6.25rem;
     max-width: 100%;
     resize: none;
 }
@@ -1222,8 +1215,8 @@ fieldset {
 }
 
 .contact-us-group {
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -1408,7 +1401,7 @@ fieldset {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
-    margin-bottom: -180px;
+    margin-bottom: -11.25rem;
     z-index: 99;
     position: relative;
 }
